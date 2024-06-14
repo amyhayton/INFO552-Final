@@ -1,0 +1,11 @@
+#hero{
+    background-image: url("../img/hero/hero-test.png");
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 74px;
+
+    @include md{
+        height: 80vh;
+    }
+}

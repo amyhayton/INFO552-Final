@@ -1,3 +1,28 @@
 /* =============
     Buttons
 ============= */
+
+button{
+    border: none;
+    background-color: transparent;
+}
+
+.primary-button{
+    background-color: var(--dark-green);
+    padding: 8px 24px;
+    font-weight: 750;
+    font-size: rem-calc(18);
+    color: var(--white);
+    border-radius: 23px;
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--white);
+        border-color: var(--dark-green);
+        border-style: solid;
+        color: var(--dark-green);
+
+    }
+    
+}
