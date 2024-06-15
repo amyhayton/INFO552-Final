@@ -366,6 +366,10 @@ button {
   border: none;
   background-color: transparent;
 }
+button a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .primary-button {
   background-color: var(--dark-green);
@@ -815,4 +819,55 @@ footer ul #copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+/* =============
+    Contact
+============= */
+.contact-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-bottom: -100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-header > div {
+  width: 90vh;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.contact-container > div {
+  width: 90vh;
+  margin: 30px;
 }
