@@ -1,8 +1,8 @@
 /* =============
-    Resume
+    Associations
 ============= */
 
-.resume-header{
+.associations-header{
     display: flex;
     flex-direction: row;
     margin-top: 150px;
@@ -11,24 +11,24 @@
     align-items: center;
 }
 
-.resume-header > div{
-    width: 90vh;
+.associations-header > div{
+    width: 70vh;
 }
 
-.resume-container{
+.associations-container{
     display: flex;
     flex-direction: row;
     // margin-top: 150px;
     margin-left: 10px;
 }
 
-.resume-container > div{
-    width: 90vh;
-    margin: 30px;
+.associations-container > div{
+    width: 70vh;
+    margin: 40px;
 }
 
 @media (max-width: 800px){
-    .resume-container{
+    .associations-container{
         flex-direction: column;
     }
 }

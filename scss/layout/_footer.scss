@@ -1,3 +1,48 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 10px;
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-size: rem-calc(12);
+
+    a{
+        color: var(--white);
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+
+        grid-template-areas: "validation cci sitemap copyright";
+
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #validation{
+            grid-area: validation;
+        }
+
+        #cci{
+            grid-area: cci;
+        }
+
+        #sitemap{
+            grid-area: sitemap;
+        }
+
+        #copyright{
+            grid-area: copyright;
+        }
+    }
+}
