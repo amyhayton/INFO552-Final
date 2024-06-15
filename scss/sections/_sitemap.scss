@@ -1,0 +1,28 @@
+/* =============
+    Sitemap
+============= */
+
+.sitemap-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-left: 40px;
+    margin-bottom: -40px;
+    align-items: center;
+}
+
+.sitemap-header > div{
+    width: 90vh;
+}
+
+.sitemap-container{
+    display: flex;
+    flex-direction: row;
+    // margin-top: 150px;
+    margin-left: 10px;
+}
+
+.sitemap-container > div{
+    width: 90vh;
+    margin: 30px;
+}
