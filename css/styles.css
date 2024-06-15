@@ -346,6 +346,10 @@ h1 {
   color: var(--dark-green);
 }
 
+a {
+  color: var(--dark-green);
+}
+
 /* =============
     Typography
 ============= */
