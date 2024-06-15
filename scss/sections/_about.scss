@@ -1,0 +1,36 @@
+/* =============
+    About
+============= */
+
+#about-me-container{
+    height: 20vh;
+    margin-top: 200px;
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        grid-template-areas: 
+        "headshot headshot intro .";
+
+        li{
+            display: flex;
+        }
+
+        #headshot{
+            grid-area: headshot;
+            justify-content: center;
+        }
+
+        #intro{
+            grid-area: intro;
+
+            h1{
+                text-align: left;
+            }
+
+            p{
+                text-align: left;
+            }
+        }
+    }
+}

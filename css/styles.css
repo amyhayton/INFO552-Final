@@ -342,11 +342,21 @@ ul li {
   list-style: none;
 }
 
+h1 {
+  color: var(--dark-green);
+}
+
 /* =============
     Typography
 ============= */
 body {
   font-family: "Open Sans", sans-serif;
+}
+
+.contentSectionTitle {
+  font-size: 1.75rem;
+  font-weight: 750;
+  margin-bottom: 16px;
 }
 
 /* =============
@@ -565,4 +575,44 @@ header #logo-container {
   #hero {
     height: 80vh;
   }
+}
+
+/* =============
+    About
+============= */
+#about-me-container {
+  height: 20vh;
+  margin-top: 200px;
+}
+#about-me-container ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3fr)[4];
+  grid-template-columns: repeat(4, 3fr);
+      grid-template-areas: "headshot headshot intro .";
+}
+#about-me-container ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#about-me-container ul #headshot {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: headshot;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#about-me-container ul #intro {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: intro;
+}
+#about-me-container ul #intro h1 {
+  text-align: left;
+}
+#about-me-container ul #intro p {
+  text-align: left;
 }
