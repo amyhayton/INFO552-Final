@@ -385,6 +385,11 @@ button {
   color: var(--dark-green);
 }
 
+.download-button {
+  color: var(--black);
+  cursor: pointer;
+}
+
 /* =============
     Forms
 ============= */
@@ -615,4 +620,52 @@ header #logo-container {
 }
 #about-me-container ul #intro p {
   text-align: left;
+}
+
+/* =============
+    Resume
+============= */
+.resume-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 150px;
+  margin-left: 40px;
+  margin-bottom: -40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resume-header > div {
+  width: 90vh;
+}
+
+.resume-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 10px;
+}
+
+.resume-container > div {
+  width: 90vh;
+  margin: 30px;
+}
+
+@media (max-width: 800px) {
+  .resume-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
